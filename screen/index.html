@@ -17,6 +17,14 @@
                 extend: {
                     screens: {
                         'xs': '375px'
+                    },
+                    maxHeight: {
+                        '0': '0',
+                        'full': '1000px'
+                    },
+                    transitionProperty: {
+                        '500': '500ms',
+                        '2000': '2000ms'
                     }
                 },
             }
@@ -27,15 +35,80 @@
 <body>
     <div>
         <!-- FAQ -->
-        <div class="py-[50px]">
-            <div class="flex justify-center items-center">
-                <p class="font-manrope font-[700]">Frequently Asked Questions</p>
+        <div class="py-[50px] xl:py-[84px]">
+            <div class="flex flex-col justify-center items-center  px-[15px]">
+                <p class="font-manrope font-[700] mb-[20px] md:text-[25px] xl:mb-[64px]">Frequently Asked Questions</p>
 
-                <div class="py-[26px] px-[20px], bg-[#EFF1F4]">
-                    <p>
-                        What are the accepted payment channels for my Wealify Virtual Account?
-                    </p>
+                <div
+                    class="py-[15px] px-[15px] mb-[8px] bg-[#EFF1F4] w-full rounded-[16px] flex flex-col  justify-center md:w-[60%] xl:w-[51%] xl:py-[26px] xl:px-[20px]">
+                    <div class="flex flex-row justify-between">
+                        <p class="font-manrope font-[600] text-[15px] w-[94%] ">
+                            1. What are the accepted payment channels for my Wealify Virtual Account?
+                        </p>
+
+                        <img class="w-[6%] lg:w-[24px] xl:w-[24px] lg:h-[24px] " src="../assets/insert Icon.svg" alt="">
+                    </div>
+
+
+                    <!-- expand -->
+                    <div class=" expand mt-[22px] w-full max-h-0 overflow-hidden transition-[max-height] duration-500">
+                        <div class="h-[1px] w-[60%] border border-[#FF5524] mb-[22px]"></div>
+                        <div class=" w-full">
+                            <p class="text-[#7A7D89] text-[14px] font-[500]">Hiện tại Wealify hỗ trợ giao dịch từ các
+                                nền
+                                tảng:</p>
+                            <ul class="list-disc ml-[22px]">
+                                <li class="text-[#7A7D89] text-[14px] font-[500]">Esty: <a
+                                        class="text-[blue] text-[14px] font-[500] underline  underline-offset-4"
+                                        href="">https://www.etsy.com/</a>
+                                </li>
+                                <li class="text-[#7A7D89] text-[14px] font-[500]">Ebay: <a
+                                        class="text-[blue] underline  underline-offset-4"
+                                        href="">https://www.ebay.com/</a>
+                                </li>
+                                <li class="text-[#7A7D89] text-[14px] font-[500]">PayPal: <a
+                                        class="text-[blue] text-[14px] font-[500] underline  underline-offset-4"
+                                        href="">https://www.paypal.com/vn/</a>
+                                </li>
+                                <li class="text-[#7A7D89] text-[14px] font-[500]">PingPong: <a
+                                        class="text-[blue] text-[14px] font-[500] underline  underline-offset-4"
+                                        href="">https://vn.pingpongx.com/</a>
+                                </li>
+                                <li class="text-[#7A7D89] text-[14px] font-[500]">Payoneer: <a
+                                        class="text-[blue] text-[14px] font-[500] underline  underline-offset-4"
+                                        href="">https://www.payoneer.com/</a>
+                                </li>
+                                <li class="text-[#7A7D89] text-[14px] font-[500]">LianLian: <a
+                                        class="text-[blue] text-[14px] font-[500] underline  underline-offset-4"
+                                        href="">https://www.lianlianglobal.com/</a></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+
                 </div>
+                <!-- 
+                <div
+                    class="py-[15px] px-[15px] mb-[8px] bg-[#EFF1F4] w-full rounded-[16px] flex flex-row items-center justify-center md:w-[60%] xl:w-[51%] xl:py-[26px] xl:px-[20px]">
+
+                    <p class="font-manrope font-[600] text-[15px] w-[94%] ">
+                        2. What is the currency of the Wealify Virtual Account?
+                    </p>
+
+                    <img class="w-[6%] lg:w-[5%] xl:w-[20px]" src="../assets/insert Icon.svg" alt="">
+                </div>
+
+                <div
+                    class="py-[15px] px-[15px] mb-[8px] bg-[#EFF1F4] w-full rounded-[16px] flex flex-row items-center justify-center md:w-[60%] xl:w-[51%] xl:py-[26px] xl:px-[20px]">
+
+                    <p class="font-manrope font-[600] text-[15px] w-[94%] ">
+                        3. How long does it take to process Wealify transactions?
+                    </p>
+
+                    <img class="w-[6%] lg:w-[5%] xl:w-[20px]" src="../assets/insert Icon.svg" alt="">
+                </div> -->
 
             </div>
         </div>
@@ -193,7 +266,7 @@
     </div>
     </div>
 
-
+    <script src="../js/landingFooter.js"></script>
 </body>
 
 </html>
